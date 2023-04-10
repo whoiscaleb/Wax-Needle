@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wax & Needle</title>
+</head>
+<body>
+    <h1>Wax & Needle</h1>
+    <a href="/products/new" id="create">Click here to add a new album</a>
+    <h2>Check out the latest release!</h2>
+    <ul>
+        <% for (let i = 0; i < product.length; i++ ) { %>
+          <li id="items">      
+            <a href="/products/<%= product[i]._id %>"><%=product[i].name %></a>
+            <img src="<%= product[i].img %>" alt="<%= product[i].name%>">
+            </li>
+      <% } %>
+          </ul>
+</body>
+</html>
