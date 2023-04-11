@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/public/new.css">
+		<title>Book List</title>
+	</head>
+	<body>
+		<h1>Create New Product</h1>
+		<form action="/products/" method="POST">
+			Name: <input type="text" name="name" /><br />
+			Description: <input type="text" name="description" /><br />
+			Price: <input type="number" name="price" /><br />
+            Qty: <input type="number" name="qty" /><br />
+			Image URL:<input type="text" name="img" value=""/><br/>   
+			<button type="submit">Submit</button>
+		</form>
+		<a href="/index.ejs">Home!</a>
+	</body>
+</html>
+

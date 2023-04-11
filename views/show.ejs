@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/public/show.css">
+	<title>Document</title>
+</head>
+<body>
+    <img src='<%= product.img%>'></img>
+	<h1><%=product.name%></h1>
+    <p>
+        Description: <%= product.description%></br>
+        Qty: <%= product.qty %></br>
+        Price: <%= product.price %></br>  
+    </p>
+<form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+	<input class="button" name="delete" 
+	type="submit" value="DELETE" style="margin-top:30px; width:30%">
+</form>
+<form action="/products/<%=product._id%>/edit">
+    <input class="button" name="delete" method="POST" type="submit" value="EDIT" style="margin-top:30px; width:30%">
+</form>
+	</ul>
+</body>
+</html>

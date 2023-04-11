@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/public/edit.css">
+    <title>Create Product</title>
+  </head>
+    <body>
+      <h1><%= product.name %></h1>
+      <img src='<%= product.img %>'></img>
+      
+<form action="/products/<%=product._id%>?_method=PUT" method="POST">
+          Name: <input type="text" id="name" name="name" value="<%= product.name%>"/></br>
+          Description: <input type="text" id="name" name="description" value="<%= product.description %>"/></br>
+          Price: <input type="text" id="name" name="price" value="<%= product.price %>"/></br>
+          Qty: <input type="text" id="name" name="" value="<%= product.qty%>"/></br>
+          <button type="submit">Submit</button>
+      </form>
+      <a href="/products">Home!</a>
+  </body>
+</html>
