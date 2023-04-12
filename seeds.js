@@ -16,7 +16,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 const productArr = [
   {
     name: 'Rubber Soul by The Beatles',
-    description: 'Rubber Soul is the sixth studio album by the English rock band the Beatles. It was released on 3 December 1965 in the United Kingdom, on the Parlophone label, accompanied by the non-album double A-side single Day Tripper.'
+    album: 'Rubber Soul is the sixth studio album by the English rock band the Beatles. It was released on 3 December 1965 in the United Kingdom, on the Parlophone label, accompanied by the non-album double A-side single Day Tripper.'
     ,img: 'https://i.discogs.com/XO-Barxecgb47E1_XVm2WYDRfgwPzxEgJV9JmEmNLKo/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MzYx/Ny0xNTc3NjQyNTc5/LTgwMDQuanBlZw.jpeg',
     price: 45,
     qty: 376

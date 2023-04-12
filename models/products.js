@@ -7,6 +7,7 @@ const productSchema = new mongoose.Schema({
     price: {type: Number, required: true},
     qty: {type: Number, required: true},
 	completed: Boolean,
+    artist: { type: String, required: true },
 });
 
 const Products = mongoose.model('Product', productSchema);
