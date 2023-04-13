@@ -10,6 +10,7 @@
       
 <form action="/products/<%=product._id%>?_method=PUT" method="POST">
           Name: <input type="text" id="name" name="name" value="<%= product.name%>"/></br>
+          Artist: <input type="text" id="name" name="artist" value="<%= product.artist %>"/></br>
           Description: <input type="text" id="name" name="description" value="<%= product.description %>"/></br>
           Price: <input type="text" id="name" name="price" value="<%= product.price %>"/></br>
           Qty: <input type="text" id="name" name="" value="<%= product.qty%>"/></br>
