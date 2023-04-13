@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/show.css">
-	<title>Document</title>
+	<title>Wax & Needle</title>
 </head>
 <body>
 	<header>
@@ -19,9 +19,10 @@
         </nav>
         <a class="cta" href="#"><button>Contact</button></a>
     </header>
+	<div>
     <img src='<%= product.img%>'></img>
 	<h1><%=product.name%></h1>
-	<%= product.artist%></br>
+	<h2><%= product.artist%></h2></br>
     <p>
 		Price: <%= product.price %></br>  
         Qty: <%= product.qty %></br>
@@ -29,7 +30,6 @@
     </p>
 
 <!-- DELETE BUTTON -->
-
 <a href="#" id="edit">
 <form action="/products/<%=product._id%>?_method=DELETE" method="POST"></a>
 	<input class="button" name="delete" 
@@ -41,6 +41,7 @@
 <form action="/products/<%=product._id%>/edit">
     <input class="button" name="delete" method="POST" type="submit" value="EDIT">
 </a>
+</div>
 
 
 </form>

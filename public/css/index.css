@@ -6,12 +6,16 @@
     background-color: #24252A;
 }
 img {
-    width: 25%;
-    height: auto;
+    width: 80%;
+    height: 100%;
     vertical-align: middle;
+    background-color: #24252A ;
 }
 h2 {
     color: rgb(233, 233, 233);
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    padding: 20px;
 }
 li, a, button {
     font-family: "Montserrat", sans-serif;
@@ -82,4 +86,32 @@ color: rgba(244, 12, 12, 0.8);
 #artclick:hover {
     opacity: 1;
     transition: opacity 0.3s ease;
+}
+#items {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400px;
+
+}
+
+#artclick {
+    display: grid;
+    flex-direction: row;
+    max-height: 100%;
+    max-width: 100%;
+}
+#albums {
+    --gap: 20px;
+    --num-cols: 4;
+    --row-height: 300px;
+    
+
+    box-sizing: border-box;
+    padding: var( --gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    margin-left: 80px;
 }
