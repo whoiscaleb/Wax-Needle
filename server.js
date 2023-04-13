@@ -19,7 +19,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 // Body parser middleware: give us access to req.body
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
-app.use(express.static('public'))
+app.use(express.static('public'));
 mongoose.connect(process.env.DATABASE_URL);
 
 

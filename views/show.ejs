@@ -4,10 +4,21 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/public/show.css">
+	<link rel="stylesheet" href="/css/show.css">
 	<title>Document</title>
 </head>
 <body>
+	<header>
+        <img class="logo" src="/css/wax-logo.png" alt="logo">
+        <nav> 
+            <ul class="nav__links">
+                <li><a href="/products/new" id="create">Add Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/products">Home</a></li>
+         </ul>   
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
     <img src='<%= product.img%>'></img>
 	<h1><%=product.name%></h1>
 	<%= product.artist%></br>
@@ -16,12 +27,22 @@
         Qty: <%= product.qty %></br>
 		Description: <%= product.description%></br>
     </p>
-<form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+
+<!-- DELETE BUTTON -->
+
+<a href="#" id="edit">
+<form action="/products/<%=product._id%>?_method=DELETE" method="POST"></a>
 	<input class="button" name="delete" 
-	type="submit" value="DELETE" style="margin-top:30px; width:30%">
+	type="submit" value="DELETE">
 </form>
+
+<!-- EDIT BUTTON -->
+<a href="#" id="delete">
 <form action="/products/<%=product._id%>/edit">
-    <input class="button" name="delete" method="POST" type="submit" value="EDIT" style="margin-top:30px; width:30%">
+    <input class="button" name="delete" method="POST" type="submit" value="EDIT">
+</a>
+
+
 </form>
 	</ul>
 </body>

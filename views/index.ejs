@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Wax & Needle</title>
 </head>
 <body>
-    <h1>Wax & Needle</h1>
-    <a href="/products/new" id="create">Click here to add a new album</a>
+    <div class="parent">
+    <header>
+        <img class="logo" src="/css/wax-logo.png" alt="logo">
+        <nav> 
+            <ul class="nav__links">
+                <li><a href="/products/new" id="create">Add Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/products">Home</a></li>
+         </ul>   
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+  </button>
+    <div id="page">
+    
     <h2>Check out the latest release!</h2>
     <ul>
         <% for (let i = 0; i < product.length; i++ ) { %>
           <li id="items">      
-            <a href="/products/<%= product[i]._id %>"><%=product[i].name %></a>
-            <img src="<%= product[i].img %>" alt="<%= product[i].name%>">
+            <a id="link" href="/products/<%= product[i]._id %>"><%=product[i].name %></a>
+
+            
+            <a id="link" href="/products/<%= product[i]._id %>"><img src="<%= product[i].img %>" alt="<%= product[i].name%>"></a>
+            
             </li>
       <% } %>
           </ul>
+    </div>
+</div>
 </body>
 </html>
