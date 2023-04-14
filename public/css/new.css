@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #404247;
+}
+img {
+    width: 25%;
+    height: auto;
+    vertical-align: middle;
+}
+h2 {
+    color: rgb(233, 233, 233);
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+h1 {
+   font-size: 300px;
+   color: whitesmoke;
+   font-size: 50px;
+   display: flex;
+   justify-content: center;
+}
+* {
+    color: whitesmoke;
+}
+.logo {
+    cursor: pointer;
+    max-width: 30%;
+    max-height: 30%;
+    margin-right: auto;
+    margin-left: -90px;
+}
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: rgba(244, 12, 12, 0.8);
+}
+button {
+    margin-left: 30px;
+    padding: 9px 25px;
+    background-color: rgb(231, 23, 23);
+    border: none; 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#button:hover {
+    background-color: rgba(210, 214, 215, 0.8);
+}
+body {
+    background-color: rgb(39, 34, 34);
+}
+#link {
+    margin-left: 30px;
+    padding: 9px 25px;
+    border: none; 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#link:hover {
+color: rgba(244, 12, 12, 0.8);
+}
+
+#artclick:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+#edit {
+    margin-left: 30px;
+    padding: 10px 0px;
+    background-color: rgb(231, 23, 23);
+    border: none; 
+    border-radius: 0.2px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    padding: 0px 20px;
+}
+#delete {
+    margin-left: 30px;
+    padding: 10px 0px;
+    background-color: rgb(231, 23, 23);
+    border: none; 
+    border-radius: 0.2px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    padding: 0px 20px;
+}
+p {
+    align-items: center;
+    padding: 6px 50px 50px 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    float: right;
+
+}
+h2 {
+    color: rgb(233, 233, 233);
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    padding: 10px 10px 10px 55px;
+}
+form {
+    color: whitesmoke;
+    padding: 30px; 
+    display: grid;
+    justify-content: center;
+}
+input[type="text"], input[type="number"], textarea {
+    background-color : #ffffff; 
+    border-radius: 12px;
+    size: 40px;
+  }
+  input{
+    color: rgb(0, 0, 0);
+  }
+  #textboxid {
+    height: 40px;
+    width: 250px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+input[type="submit"] {
+    margin-left: 30px;
+    padding: 9px 25px;
+    background-color: rgb(231, 23, 23);
+    border: none; 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+input[type="submit"]:hover {
+    background-color: rgba(210, 214, 215, 0.8);
+}

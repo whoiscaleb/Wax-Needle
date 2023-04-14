@@ -5,22 +5,32 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./public/new.css">
-		<title>Book List</title>
+		<link rel="stylesheet" href="/css/new.css">
+		<title>Create New Product</title>
 	</head>
 	<body>
+		<header>
+        <img class="logo" src="/css/wax-logo.png" alt="logo">
+        <nav> 
+            <ul class="nav__links">
+                <li><a href="/products/new" id="create">Add Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/products">Home</a></li>
+         </ul>   
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
 		<h1>Create New Product</h1>
-		<form action="/products/" method="POST">
-			Name: <input type="text" name="name" /><br />
-			Artist: <input type="text" name="artist" /><br />
-			Description: <input type="text" name="description" /><br />
-			Price: <input type="number" name="price" /><br />
-            Qty: <input type="number" name="qty" /><br />
-			Image URL:<input type="text" name="img" value=""/><br/>   
 
+		<form action="/products/" method="POST">
+			Name: <input id="textboxid" type="text" name="name" /><br />
+			Artist: <input id="textboxid" type="text" name="artist" /><br />
+			Description: <input id="textboxid" type="text" name="description" /><br />
+			Price: <input id="textboxid" type="number" name="price" /><br />
+            Qty: <input id="textboxid" type="number" name="qty" /><br />
+			Image URL:<input id="textboxid" type="text" name="img" value=""/><br>   
 			<button type="submit">Submit</button>
 		</form>
-		<a href="/index.ejs">Home!</a>
 	</body>
 </html>
 
